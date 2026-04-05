@@ -49,7 +49,7 @@ export default function Transport() {
         </div>
 
         <p className="text-xs text-[#2C2420]/40 text-center">
-          Indica tu preferencia al confirmar asistencia en el formulario RSVP.
+          Próximamente confirmaremos el punto exacto de recogida.
         </p>
       </div>
     </Section>

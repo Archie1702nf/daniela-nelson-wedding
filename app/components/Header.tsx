@@ -7,7 +7,6 @@ const navLinks = [
   { href: '#ceremony', label: 'Ceremonia' },
   { href: '#transport', label: 'Transporte' },
   { href: '#dresscode', label: 'Estilo' },
-  { href: '#rsvp', label: 'RSVP' },
   { href: '#gifts', label: 'Regalo' },
 ];
 

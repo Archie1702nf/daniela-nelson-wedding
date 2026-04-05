@@ -1,4 +1,5 @@
 import Countdown from './Countdown';
+import AddToCalendar from './AddToCalendar';
 import { weddingData } from '../constants';
 import Image from 'next/image';
 
@@ -60,6 +61,16 @@ export default function Hero() {
         <div className="mt-14 w-full">
           <Countdown targetDate={weddingData.weddingDate} />
         </div>
+
+        {/* Add to calendar */}
+        <AddToCalendar
+          title="Boda Daniela & Nelson"
+          date={weddingData.weddingDate}
+          startTime="17:00"
+          endTime="04:00"
+          location={`${weddingData.ceremony.location}, ${weddingData.ceremony.address}`}
+          description={`Ceremonia: ${weddingData.ceremony.location} a las 17:00 h. Recepción: ${weddingData.banquet.location} a las 19:00 h.`}
+        />
       </div>
     </section>
   );

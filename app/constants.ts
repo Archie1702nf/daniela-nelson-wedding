@@ -9,7 +9,7 @@ export const weddingData = {
 
   ceremony: {
     title: "La Ceremonia",
-    location: "Iglesia Santa María Magdalena",
+    location: "Iglesia de Santa María Magdalena",
     address: "Pl. Mayor, 3, 28180 Torrelaguna, Madrid",
     time: "17:00 h",
     mapsUrl: "https://maps.google.com/?q=Pl.+Mayor,+3,+28180+Torrelaguna,+Madrid",
@@ -38,7 +38,6 @@ export const weddingData = {
     pinterestLink: "[Link a Pinterest]", // Replace with actual Pinterest link
     recommendations: "Para las invitadas, les recomendamos evitar tacones excesivamente finos ya que hay césped y traer algo de abrigo para la noche. Lo más importante es que se sientan cómodos para bailar toda la noche.",
     restriction: "Por favor, abstenerse de usar verde salvia.",
-    // Colors to visually communicate the restriction — rendered with "no usar" treatment
     avoidColors: [
       { hex: "#696F32", label: "Salvia oscuro" },
       { hex: "#A3A868", label: "Salvia" },
@@ -47,31 +46,17 @@ export const weddingData = {
     ],
   },
 
-  rsvp: {
-    title: "Confirmación",
-    description: "Tu presencia es nuestro mejor regalo. Por favor, confirma tu asistencia antes del 9 de septiembre.",
-    deadline: "9 de septiembre",
-    fields: {
-      name: "Nombre",
-      contact: "Email o teléfono",
-      attendance: "Confirmación de asistencia",
-      guests: "Pases asignados",
-      transport: "¿Harás uso del servicio de transporte?",
-      dietary: "Menú especial / alergias / intolerancias / preferencias",
-      notes: "Notas adicionales",
-    },
-    options: {
-      attendance: ["Sí, asistiré", "No, no podré asistir"],
-      guests: ["1", "2", "3", "4", "5"],
-      transport: ["Sí", "No"],
-    },
-  },
-
   gifts: {
     title: "El regalo",
     description: "¿Qué mejor regalo que compartir este día con quienes más queremos? Aún así, si quisieras ayudarnos a seguir escribiendo nuestra historia, te dejamos los datos bancarios.",
-    iban: "ES00 0000 0000 0000 0000", // Replace with actual IBAN
-    holders: "Daniela y Nelson",
+    transferencia: {
+      titular: "Daniela Jaspe",
+      iban: "ES5601820915140201573447",
+    },
+    bizum: {
+      number: "+34 654 455 288",
+      name: "Nelson Ferreira",
+    },
   },
 };
 

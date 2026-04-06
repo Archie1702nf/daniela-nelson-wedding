@@ -29,9 +29,6 @@ export default function DressCode() {
 
         {/* Recommendations card */}
         <div className="w-full max-w-lg border border-[#AF9983]/30 rounded-sm bg-white/30 px-8 py-6 text-center">
-          <p className="text-[10px] tracking-[0.18em] uppercase text-[#696F32] mb-3">
-            Recomendaciones
-          </p>
           <p className="text-sm text-[#2C2420]/65 leading-relaxed">
             {weddingData.dressCode.recommendations}
           </p>

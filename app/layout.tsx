@@ -23,6 +23,9 @@ const helveticaLight = localFont({
 export const metadata: Metadata = {
   title: "Daniela & Nelson — ¡Nos casamos!",
   description: "Únete a nuestra celebración el 9 de octubre de 2026",
+  icons: {
+    icon: "/MONOGRAMA-65.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

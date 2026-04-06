@@ -1,50 +1,30 @@
-'use client';
-
-import { useState } from 'react';
-
 function NicknameName({ realName, nickname }: { realName: string; nickname: string }) {
-  const [revealed, setRevealed] = useState(false);
-  // Spacer keeps layout stable regardless of which name is shown
   const spacer = realName.length >= nickname.length ? realName : nickname;
 
   return (
-    <span className="inline-flex items-center gap-1">
-      {/* Crossfade container */}
-      <span className="relative inline-block group cursor-default">
-        {/* Invisible spacer — holds width of the longer name */}
-        <span className="invisible select-none" aria-hidden="true">
-          {spacer}
-        </span>
-
-        {/* Real name — fades out on desktop hover or mobile reveal */}
-        <span
-          className={`absolute inset-0 flex justify-center items-center transition-opacity duration-300 group-hover:opacity-0 ${
-            revealed ? 'opacity-0' : 'opacity-100'
-          }`}
-        >
-          {realName}
-        </span>
-
-        {/* Nickname — fades in on desktop hover or mobile reveal */}
-        <span
-          className={`absolute inset-0 flex justify-center items-center transition-opacity duration-300 group-hover:opacity-100 ${
-            revealed ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          {nickname}
-        </span>
+    <span className="relative inline-block group cursor-default">
+      {/* Mobile: ghost nickname sitting above the name, always visible at low opacity */}
+      <span className="md:hidden absolute -top-5 left-1/2 -translate-x-1/2 font-sans text-[9px] tracking-[0.2em] uppercase text-[#AF9983] opacity-25 whitespace-nowrap pointer-events-none select-none">
+        {nickname}
       </span>
 
-      {/* Mobile-only tap icon — hidden on desktop */}
-      <button
-        className="md:hidden inline-flex items-center justify-center w-4 h-4 -translate-y-1 text-[#AF9983]/30 active:text-[#AF9983]/70 transition-colors"
-        onClick={() => setRevealed((v) => !v)}
-        aria-label={`Ver apodo de ${realName}`}
-      >
-        <svg width="7" height="7" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true">
-          <path d="M4 0 L4.6 2.8 L7.6 2 L5.6 4 L7.6 6 L4.6 5.2 L4 8 L3.4 5.2 L0.4 6 L2.4 4 L0.4 2 L3.4 2.8 Z" />
-        </svg>
-      </button>
+      {/* Mobile: real name rendered normally */}
+      <span className="md:hidden">{realName}</span>
+
+      {/* Desktop: invisible spacer holds the width of the longer name */}
+      <span className="hidden md:inline invisible select-none" aria-hidden="true">
+        {spacer}
+      </span>
+
+      {/* Desktop: real name — fades out on hover */}
+      <span className="hidden md:flex absolute inset-0 justify-center items-center transition-opacity duration-300 group-hover:opacity-0">
+        {realName}
+      </span>
+
+      {/* Desktop: nickname — fades in on hover */}
+      <span className="hidden md:flex absolute inset-0 justify-center items-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+        {nickname}
+      </span>
     </span>
   );
 }

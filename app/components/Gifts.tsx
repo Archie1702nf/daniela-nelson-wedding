@@ -40,12 +40,12 @@ export default function Gifts() {
             </p>
             <div className="space-y-3">
               <div>
-                <p className="text-[10px] tracking-[0.14em] uppercase text-[#2C2420]/40 mb-1">Número</p>
-                <p className="font-mono text-sm tracking-wider text-[#2C2420]/70">{bizum.number}</p>
-              </div>
-              <div>
                 <p className="text-[10px] tracking-[0.14em] uppercase text-[#2C2420]/40 mb-1">Titular</p>
                 <p className="font-serif text-base text-[#65232D]">{bizum.name}</p>
+              </div>
+              <div>
+                <p className="text-[10px] tracking-[0.14em] uppercase text-[#2C2420]/40 mb-1">Teléfono</p>
+                <p className="font-mono text-sm tracking-wider text-[#2C2420]/70">{bizum.number}</p>
               </div>
             </div>
           </div>

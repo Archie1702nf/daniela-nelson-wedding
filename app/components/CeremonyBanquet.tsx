@@ -55,13 +55,13 @@ export default function CeremonyBanquet() {
         {/* Row 1: Illustrations */}
         <div className="grid grid-cols-4 gap-6 mb-4">
           {events.map((event) => (
-            <div key={event.label} className="flex justify-center items-end h-36">
+            <div key={event.label} className="flex justify-center items-end h-52">
               <Image
                 src={event.image}
                 alt={event.imageAlt}
-                width={120}
-                height={120}
-                className="object-contain max-h-32 w-auto"
+                width={180}
+                height={180}
+                className="object-contain max-h-48 w-auto"
               />
             </div>
           ))}
@@ -112,13 +112,13 @@ export default function CeremonyBanquet() {
           {events.map((event, i) => (
             <div key={event.label} className="flex gap-5 items-start">
               {/* Left: icon + connector */}
-              <div className="flex flex-col items-center flex-shrink-0 w-16">
-                <div className="w-16 h-16 rounded-full bg-white/50 border border-[#AF9983]/30 flex items-center justify-center">
+              <div className="flex flex-col items-center flex-shrink-0 w-28">
+                <div className="w-28 h-28 rounded-full bg-white/50 border border-[#AF9983]/30 flex items-center justify-center">
                   <Image
                     src={event.image}
                     alt={event.imageAlt}
-                    width={44}
-                    height={44}
+                    width={80}
+                    height={80}
                     className="object-contain"
                   />
                 </div>

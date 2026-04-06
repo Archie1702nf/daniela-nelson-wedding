@@ -6,8 +6,9 @@ import Image from 'next/image';
 const navLinks = [
   { href: '#ceremony', label: 'Ceremonia' },
   { href: '#transport', label: 'Transporte' },
-  { href: '#dresscode', label: 'Estilo' },
+  { href: '#dresscode', label: 'Vestimenta' },
   { href: '#gifts', label: 'Regalo' },
+  { href: '#recommendations', label: 'Madrid' },
 ];
 
 export default function Header() {

@@ -25,8 +25,8 @@ export const weddingData = {
 
   transport: {
     description: "Queremos que disfruten al máximo y se olviden del coche. Pondremos a su disposición un servicio de transporte.",
-    pickupPoint: "Madrid Centro (Por confirmar punto exacto)",
-    returnPoint: "Madrid Centro (Por confirmar punto exacto)",
+    pickupPoint: "Madrid Centro",
+    returnPoint: "Madrid Centro",
     departureTime: "15:30 h",
     returnTimes: ["04:00 h"],
   },
@@ -47,15 +47,166 @@ export const weddingData = {
   },
 
   gifts: {
-    title: "El regalo",
-    description: "¿Qué mejor regalo que compartir este día con quienes más queremos? Aún así, si quisieras ayudarnos a seguir escribiendo nuestra historia, te dejamos los datos bancarios.",
+    title: "Regalos",
+    description: "¿Qué mejor regalo que compartir este día con quienes más queremos? Aún así, si quisieran ayudarnos a seguir escribiendo nuestra historia, les dejamos nuestros datos.",
     transferencia: {
-      titular: "Daniela Jaspe",
+      titular: "Daniela Jaspe Mijares",
       iban: "ES5601820915140201573447",
     },
     bizum: {
-      number: "+34 654 455 288",
-      name: "Nelson Ferreira",
+      number: "+34 627152648",
+      name: "Daniela Jaspe Mijares",
+    },
+  },
+
+  recommendations: {
+    intro: "Hemos reunido algunos de nuestros favoritos para quienes quieran disfrutar un poco más de Madrid.",
+
+    stylist: {
+      title: "Estilistas",
+      intro: null as string | null,
+      placeholder: null as string | null,
+      items: [
+        { name: "@rrojasduran",        mapsUrl: "https://www.instagram.com/rrojasduran/" },
+        { name: "@carlosgarciabeauty", mapsUrl: "https://www.instagram.com/carlosgarciabeauty/" },
+        { name: "@byorlandodelgado",   mapsUrl: "https://www.instagram.com/byorlandodelgado/" },
+        { name: "@mafebeauty",         mapsUrl: "https://www.instagram.com/mafebeauty/" },
+        { name: "@rubartellibeauty",   mapsUrl: "https://www.instagram.com/rubartellibeauty/" },
+        { name: "@palomabarbaa",       mapsUrl: "https://www.instagram.com/palomabarbaa/" },
+        { name: "@robertoramosmakeup", mapsUrl: "https://www.instagram.com/robertoramosmakeup/" },
+        { name: "@risabellaa_",        mapsUrl: "https://www.instagram.com/risabellaa_/" },
+        { name: "@juliomatamoros_",    mapsUrl: "https://www.instagram.com/juliomatamoros_/" },
+        { name: "@jorge_matamoros",    mapsUrl: "https://www.instagram.com/jorge_matamoros/" },
+      ] as Array<{ name: string; mapsUrl: string; type?: string; area?: string; note?: string }>,
+    },
+
+    restaurants: {
+      title: "Restaurantes",
+      intro: "Estos son algunos de nuestros favoritos." as string | null,
+      placeholder: null as string | null,
+      items: [
+        {
+          name: "Robata",
+          mapsUrl: "https://maps.google.com/?q=Robata+Calle+Lagasca+Madrid",
+          type: "Japonesa contemporánea",
+          area: "Salamanca",
+          note: "Parrilla robata y ambiente elegante.",
+        },
+        {
+          name: "Filandón",
+          mapsUrl: "https://maps.google.com/?q=Filand%C3%B3n+El+Pardo+Madrid",
+          type: "Mediterránea · producto · parrilla",
+          area: "El Pardo",
+          note: "Ideal para disfrutar de buen producto en un entorno especial.",
+        },
+        {
+          name: "Aranjuez Steak House",
+          mapsUrl: "https://maps.google.com/?q=Aranjuez+Steak+House+Madrid",
+          type: "Carnes · parrilla",
+          area: "Cuzco",
+          note: "Un pedacito de Caracas en España.",
+        },
+        {
+          name: "Bakan",
+          mapsUrl: "https://maps.google.com/?q=Bakan+restaurante+Madrid",
+          type: "Mexicana",
+          area: "Salamanca",
+          note: "Cocina mexicana con mucha personalidad.",
+        },
+        {
+          name: "Fismuler",
+          mapsUrl: "https://maps.google.com/?q=Fismuler+Madrid",
+          type: "Cocina de autor · producto",
+          area: "Chamberí",
+          note: "Muy famoso por su tarta de queso.",
+        },
+        {
+          name: "Numa Pompilio",
+          mapsUrl: "https://maps.google.com/?q=Numa+Pompilio+Madrid",
+          type: "Italiana",
+          area: "Salamanca",
+          note: "Un espacio espectacular con cocina italiana refinada.",
+        },
+      ] as Array<{ name: string; mapsUrl: string; type?: string; area?: string; note?: string }>,
+    },
+
+    places: {
+      title: "Lugares para visitar",
+      intro: null as string | null,
+      placeholder: null as string | null,
+      items: [
+        {
+          name: "Museo del Prado",
+          mapsUrl: "https://maps.google.com/?q=Museo+del+Prado+Madrid",
+          type: "Museo de arte",
+          area: "Retiro",
+          note: "Uno de los grandes museos de arte del mundo.",
+        },
+        {
+          name: "Parque del Retiro",
+          mapsUrl: "https://maps.google.com/?q=Parque+del+Retiro+Madrid",
+          type: "Parque",
+          area: "Retiro",
+          note: "El parque más emblemático de Madrid.",
+        },
+        {
+          name: "Plaza Mayor",
+          mapsUrl: "https://maps.google.com/?q=Plaza+Mayor+Madrid",
+          type: "Plaza histórica",
+          area: "Centro",
+          note: "Corazón histórico de la ciudad.",
+        },
+        {
+          name: "Palacio Real",
+          mapsUrl: "https://maps.google.com/?q=Palacio+Real+Madrid",
+          type: "Monumento",
+          area: "Centro",
+          note: "El palacio real más grande de Europa occidental.",
+        },
+        {
+          name: "Museo Reina Sofía",
+          mapsUrl: "https://maps.google.com/?q=Museo+Reina+Sof%C3%ADa+Madrid",
+          type: "Arte contemporáneo",
+          area: "Atocha",
+          note: "Hogar del Guernica de Picasso.",
+        },
+        {
+          name: "Mercado de San Miguel",
+          mapsUrl: "https://maps.google.com/?q=Mercado+de+San+Miguel+Madrid",
+          type: "Mercado gastronómico",
+          area: "Centro",
+          note: "Perfecto para tapas y gastronomía madrileña.",
+        },
+      ] as Array<{ name: string; mapsUrl: string; type?: string; area?: string; note?: string }>,
+    },
+
+    escapes: {
+      title: "Escapadas cerca de la ceremonia",
+      intro: "Segovia, Ávila y Patones están a menos de dos horas de Madrid y muy cerca de la iglesia. Un plan perfecto para aprovechar el viaje." as string | null,
+      placeholder: null as string | null,
+      items: [
+        {
+          name: "Segovia",
+          mapsUrl: "https://maps.google.com/?q=Segovia+Espa%C3%B1a",
+          type: "Ciudad histórica · Patrimonio UNESCO",
+          area: "1h desde Madrid",
+          note: "Acueducto romano, Alcázar medieval y cochinillo. Imprescindible.",
+        },
+        {
+          name: "Ávila",
+          mapsUrl: "https://maps.google.com/?q=%C3%81vila+Espa%C3%B1a",
+          type: "Ciudad amurallada · Patrimonio UNESCO",
+          area: "1h 30min desde Madrid",
+          note: "La muralla medieval mejor conservada de Europa.",
+        },
+        {
+          name: "Patones de Arriba",
+          mapsUrl: "https://maps.google.com/?q=Patones+de+Arriba+Madrid",
+          type: "Pueblo medieval de pizarra",
+          area: "Muy cerca de la ceremonia",
+          note: "Un pueblo con mucho encanto, a pocos minutos de Torrelaguna.",
+        },
+      ] as Array<{ name: string; mapsUrl: string; type?: string; area?: string; note?: string }>,
     },
   },
 };

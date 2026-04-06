@@ -12,7 +12,7 @@ export const weddingData = {
     location: "Iglesia de Santa María Magdalena",
     address: "Pl. Mayor, 3, 28180 Torrelaguna, Madrid",
     time: "17:00 h",
-    mapsUrl: "https://maps.google.com/?q=Pl.+Mayor,+3,+28180+Torrelaguna,+Madrid",
+    mapsUrl: "https://maps.app.goo.gl/GXciasmtw2KDK6By7",
   },
 
   banquet: {

@@ -55,7 +55,7 @@ export default function CeremonyBanquet() {
         {/* Row 1: Illustrations */}
         <div className="grid grid-cols-4 gap-6 mb-4">
           {events.map((event) => (
-            <div key={event.label} className="flex justify-center items-end h-52">
+            <div key={event.label} className="flex justify-center items-center h-52">
               <Image
                 src={event.image}
                 alt={event.imageAlt}

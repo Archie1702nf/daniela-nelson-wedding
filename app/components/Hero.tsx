@@ -40,10 +40,16 @@ export default function Hero() {
 
         {/* Names in script */}
         <h2 className="font-script text-3xl md:text-[2.6rem] text-[#696F32] leading-tight mb-7">
-          Daniela &amp;{' '}
+          <span className="relative group/daniela cursor-default">
+            Daniela
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 font-sans text-[9px] tracking-[0.2em] uppercase text-[#AF9983]/50 opacity-[0.15] md:opacity-0 md:group-hover/daniela:opacity-100 transition-opacity duration-500 whitespace-nowrap pointer-events-none select-none">
+              Nani
+            </span>
+          </span>
+          {' & '}
           <span className="relative group/nelson cursor-default">
             Nelson
-            <span className="absolute -top-5 left-1/2 -translate-x-1/2 font-sans text-[9px] tracking-[0.2em] uppercase text-[#AF9983]/50 opacity-0 group-hover/nelson:opacity-100 transition-opacity duration-500 whitespace-nowrap pointer-events-none select-none">
+            <span className="absolute -top-5 left-1/2 -translate-x-1/2 font-sans text-[9px] tracking-[0.2em] uppercase text-[#AF9983]/50 opacity-[0.15] md:opacity-0 md:group-hover/nelson:opacity-100 transition-opacity duration-500 whitespace-nowrap pointer-events-none select-none">
               Archie
             </span>
           </span>

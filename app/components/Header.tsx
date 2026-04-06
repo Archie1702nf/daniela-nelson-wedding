@@ -7,8 +7,8 @@ const navLinks = [
   { href: '#ceremony', label: 'Ceremonia' },
   { href: '#transport', label: 'Transporte' },
   { href: '#dresscode', label: 'Vestimenta' },
-  { href: '#gifts', label: 'Regalo' },
-  { href: '#recommendations', label: 'Madrid' },
+  { href: '#recommendations', label: 'Recomendaciones' },
+  { href: '#gifts', label: 'Regalos' },
 ];
 
 export default function Header() {

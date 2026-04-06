@@ -14,8 +14,8 @@ export default function Home() {
       <CeremonyBanquet />
       <Transport />
       <DressCode />
-      <Gifts />
       <Recommendations />
+      <Gifts />
     </div>
   );
 }

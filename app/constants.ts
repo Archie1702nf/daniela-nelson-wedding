@@ -2,7 +2,7 @@
 export const weddingData = {
   coupleNames: "Daniela & Nelson",
   weddingDate: "2026-10-09", // YYYY-MM-DD format for calculations
-  weddingDateDisplay: "9 de octubre de 2026",
+  weddingDateDisplay: "9 de octubre, 2026",
   heroTitle: "¡Nos casamos!",
   heroSubtitle: "Daniela & Nelson",
   heroText: "Nuestras historias se cruzaron para no separarse jamás. Queremos que nos acompañen a dar el \u201cSí, quiero\u201d",
@@ -143,8 +143,8 @@ export const weddingData = {
           note: "Uno de los grandes museos de arte del mundo.",
         },
         {
-          name: "Parque del Retiro",
-          mapsUrl: "https://maps.google.com/?q=Parque+del+Retiro+Madrid",
+          name: "Parque El Retiro",
+          mapsUrl: "https://maps.google.com/?q=Parque+El+Retiro+Madrid",
           type: "Parque",
           area: "Retiro",
           note: "El parque más emblemático de Madrid.",
